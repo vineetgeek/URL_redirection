@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var seconds=0;
+        function displayseconds(){
+            seconds +=1;
+            document.getElementById("secs").innerText="REDIRECTING in "+seconds+" Seconds...";
+        }
+        setInterval(displayseconds,1000);
+
+        function redirectpage(){
+            window.location="https://vineetsrivastav.xyz";
+
+        }
+        setTimeout('redirectpage()',5000)
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redirect</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class='body'>
+        <span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class='base'>
+          <span></span>
+          <div class='face'></div>
+        </div>
+      </div>
+      <div class='longfazers'>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="secs"></div>
+      
+      
+    
+</body>
+</html>
